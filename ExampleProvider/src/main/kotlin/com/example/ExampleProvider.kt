@@ -5,7 +5,7 @@ import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.SearchResponse
 
 class ExampleProvider : StreamDady() { // all providers must be an instance of MainAPI
-    override var mainUrl = "https://www.streamdady.com/" 
+    override var mainUrl = "https://www.streamdady.com" 
     override var name = "StreamDady"
     override val supportedTypes = setOf(TvType.Movie)
 
