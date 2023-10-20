@@ -5,7 +5,7 @@ import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.SearchResponse
 
 
-class ExampleProvider : StreamDady() 
+class StreamDady : StreamDady() 
 { // all providers must be an instance of MainAPI
 
     override var mainUrl = "https://www.streamdady.com" 
