@@ -12,12 +12,12 @@ class ExampleProvider : StreamDady() { // all providers must be an instance of M
     override var lang = "en"
 
     // enable this when your provider has a main page
-    override val hasMainPage = true
-
+    override val mainPage = mainPageOf(
+        "movies/" to "Latest",
     // this function gets called when you search for something
     override suspend fun search(query: String): List<SearchResponse> {
         return listOf<SearchResponse>()
     }
-  //  override suspend fun load(url: String): LoadResponse? {
-    //    return super.load(url).apply { this?.type = TvType.NSFW }
+    override suspend fun load(url: String): LoadResponse? {
+        return super.load(url).apply { this?.type = TvType.Movie }
 }
