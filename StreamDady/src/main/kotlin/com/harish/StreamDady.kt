@@ -12,7 +12,7 @@ class StreamDady : MainAPI()
     override var name = "StreamDady"
     override var lang = "en"
     override val supportedTypes = setOf(
-            TvType.Movie,
+            TvType.Movie
         )
 
     // enable this when your provider has a main page
